@@ -17,7 +17,7 @@ app.get('/', (req, res) => {
 
 app.post('/search', function(req, response) {
     var titleName = req.body.titleName;
-
+    results.length = 0;
     var options = {
         method: "GET",
         host: "api.themoviedb.org",
